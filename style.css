@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f9fc;
+  color: #172b4d;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  background: #ffc907;
+  padding: 25px 15px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.panel {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px #00000012;
+}
+
+button, select {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font: inherit;
+  margin: 6px;
+}
+
+button {
+  background: #ffc907;
+  color: #172b4d;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #eab900;
+}
+
+button:focus-visible, select:focus-visible, a:focus-visible {
+  outline: 3px solid #0077b6;
+  outline-offset: 3px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.progress {
+  width: 100%;
+  height: 20px;
+  background: #e2e8f0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#progressBar {
+  width: 0%;
+  height: 100%;
+  background: #2ca58d;
+  transition: width 0.2s;
+}
+
+#message {
+  font-weight: 700;
+  min-height: 45px;
+}
+
+#gameArea {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(#d8f3ff, #8dd7ef);
+  border: 4px solid #1593c4;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 15px;
+  touch-action: manipulation;
+}
+
+.drop {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
+  background: white;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px #00000022;
+}
+
+.drop:hover {
+  background: #fff6ca;
+  transform: scale(1.08);
+}
+
+#milestone {
+  font-weight: 700;
+  color: #0077b6;
+  min-height: 25px;
+}
+
+a {
+  display: inline-block;
+  margin: 10px;
+  color: #006e9f;
+  font-weight: 700;
+}
+
+footer {
+  background: #172b4d;
+  color: white;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.5rem; }
+  .panel { padding: 15px; }
+  #gameArea { height: 300px; }
+  .drop { width: 55px; height: 55px; }
+}
